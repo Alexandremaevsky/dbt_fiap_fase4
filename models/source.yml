@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+    name: sources
+    database: db_name
+    shema: public
+    tables:
+      - name: calendar
+      - name: listings
+      - name: neighbourhoods
+      - name: reviews

@@ -1,10 +1,10 @@
 version: 2
 
 sources:
-    name: sources
-    database: db_name
-    shema: public
-    tables:
+   - name: sources
+     database: dw-fiap-fase4
+     schema: fiap_fase4
+     tables:
       - name: calendar
       - name: listings
       - name: neighbourhoods

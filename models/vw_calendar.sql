@@ -1,6 +1,6 @@
-with calc_calendar as (
+with vw_calendar as (
     select 
         * 
     from {{source('sources','calendar')}}
 )
-select * from calc_calendar
+select * from vw_calendar

@@ -2,7 +2,11 @@ with calc_table_final as (
 select
 lis.id as listing_id,
 rev.date,
-lis.name,
+split(lis.name,'· ')[0] as name, 
+split(lis.name,'· ')[1] as nota,
+split(lis.name,'· ')[2] as quartos,
+split(lis.name,'· ')[3] as camas,
+split(lis.name,'· ')[4] as wc,
 lis.host_id,
 lis.host_name,
 lis.neighbourhood_group,
